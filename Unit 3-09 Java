@@ -1,0 +1,34 @@
+/******************************************************************************
+*
+* Created by: David Wang
+* Created on: Nov 2017
+* Created for: ICS3U
+* Daily assignment - Unit3-09
+* This program displays every lowercase letter for each uppercase letter
+*
+******************************************************************************/
+
+public class unicode2 {
+  
+    public static void main(String[] args)
+    {
+    // constants
+    char uppercase_first_letter = 'A';
+    char lowercase_first_letter = 'a';
+    
+        // uppercase
+        for (int ascii_upper = (int) uppercase_first_letter; (int) ascii_upper <= (int) uppercase_first_letter + 25; ascii_upper++)
+            {
+            char following_uppercase_letter = (char) ascii_upper;
+            
+            // lowercase
+            for (int ascii_lower = (int) lowercase_first_letter; ascii_lower <= (int) lowercase_first_letter + 25; ascii_lower++)
+                {
+                char following_lowercase_letter = (char) ascii_lower;
+                System.out.println(following_uppercase_letter + "     >     " + following_lowercase_letter);
+                }
+            }
+    
+    }
+
+}
